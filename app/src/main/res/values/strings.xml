@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recursos Humanos</string>
+    <string name="splash_image_description">Sifrão laranja em fundo azul claro</string>
+    <string name="app_description_text">Esse é o nosso aplicativo dr cadastro de funcionários.\nAqui vamos cadastrar as informações e calcular o salário do funcionário.</string>
+</resources>
