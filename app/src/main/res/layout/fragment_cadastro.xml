@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".fragments.CadastroFragment">
+
+    <TextView
+        android:id="@+id/tvCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_20"
+        android:text="@string/cadastro_informacoes_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/nome_e_sobrenome_hint"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintStart_toStartOf="@id/tvCadastro"
+        app:layout_constraintTop_toBottomOf="@id/tvCadastro" />
+
+    <EditText
+        android:id="@+id/etHorasTrabalhadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/horas_trabalhadas_hint"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintStart_toStartOf="@id/etNome"
+        app:layout_constraintTop_toBottomOf="@id/etNome" />
+
+    <EditText
+        android:id="@+id/etValorHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/valor_por_hora_hint"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintStart_toStartOf="@id/etHorasTrabalhadas"
+        app:layout_constraintTop_toBottomOf="@id/etHorasTrabalhadas" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginBottom="400dp"
+        android:backgroundTint="@color/light_orange"
+        android:text="@string/btn_calcular_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/etValorHora" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

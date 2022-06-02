@@ -9,7 +9,6 @@ class Funcionario(
     private val horasTrabalhadas: Int,
     private val valorHora: Double,
 ) : Parcelable {
-
     fun getNome() = this.nome
     fun getHorasTrabalhadas() = this.horasTrabalhadas
     fun getValorHora() = this.valorHora
